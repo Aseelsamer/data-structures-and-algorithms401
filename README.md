@@ -10,4 +10,4 @@
 -O(n) length of the loop in the array 
 
 ## Solution
-![GitHub Logo](/assests/reversearrayimg.PNG)
+![GitHub Logo](./assests/reversearrayimg.PNG)

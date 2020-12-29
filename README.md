@@ -30,3 +30,21 @@ This function has complexity of O(n) since insert it depends on the size of the 
 
 ## Solution
 ![GitHub Logo](./assests/shift-array.PNG)
+
+
+----------------------------------------------
+# Binary Search Array
+
+
+# Challenge Summary
+Binary Search (sometimes known as Logarithmic Search) is a widely popular algorithm to search a sorted array for the position of a given element.
+
+## Challenge Description
+It works on a divide and conquer basis by comparing the target element with the middle element of the array. 
+
+## Approach & Efficiency
+In Big-O Notation terms, an O(n) complexity.
+
+## Solution
+![GitHub Logo](./assests/array-binary.PNG)
+

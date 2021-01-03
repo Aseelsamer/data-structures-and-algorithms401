@@ -1,6 +1,6 @@
 'use strict';
 
-const linkedList = require ('../linked-list/linked-list');
+const linkedList = require ('../linked-list/linked-list.js');
 
 describe('LinkedList Module',()=>{
     it('empty linked list',()=>{

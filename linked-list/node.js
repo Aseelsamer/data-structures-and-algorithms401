@@ -4,5 +4,5 @@ class Node {
         this.value = this.value;
         this.next = null;
     };
-
+}
 module.exports = Node;

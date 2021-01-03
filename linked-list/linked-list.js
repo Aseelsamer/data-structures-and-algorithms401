@@ -9,14 +9,14 @@ class Linkedlist {
 
 //adds new node with value to the head .
     insert(value) {
-        this.head = new Node(value, this.head)
+        let node = new Node(value);
     }
 //return booleon result depending wether value exist or no.
-    includes(value) {
+    includes(value1) {
 
         let currentNode = this.head;
         while (currentNode) {
-            if (currentNode.value === this.value) {
+            if (currentNode.value1 === this.value1) {
                 return true;
             }
 
@@ -48,7 +48,7 @@ class Linkedlist {
       }
     }
 
-}
+
 
 
 module.exports = Linkedlist;

@@ -1,13 +1,11 @@
 # data-structures-and-algorithms401
 
-# ReverseArray
 
-## Challenge :
--The reverse method transposes the elements of the calling array object in place, mutating the array, and returning a reference to the array.
+##Table of Code Challenges :
 
-## Approach & Efficiency
--For Loop
--O(n) length of the loop in the array 
-
-## Solution
-![GitHub Logo](./assests/reversearrayimg.PNG)
+Code#   |  Link
+-----------|-----------
+array-reverse     | [CC01](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/array-reverse)
+array-shift      | [CC02](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/array-shift)
+Binary-Search      | [CC03](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/array-binary-search)
+Linked-list      | [CC04](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/linked-list)

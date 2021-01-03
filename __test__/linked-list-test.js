@@ -1,6 +1,6 @@
 'use strict';
 
-const linkedList = require ('../linked-list/linked-list.js');
+const linkedList = require ('../Data Structuree/linked-list/linked-list');
 
 describe('LinkedList Module',()=>{
     it('empty linked list',()=>{

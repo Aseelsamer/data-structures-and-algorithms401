@@ -12,6 +12,8 @@ Linked-list      | [CC04](https://github.com/Aseelsamer/data-structures-and-algo
 Linked-list Insertion     | [CC05](
 https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/5)
 
+Linked-list kth     |[CC07](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/6)
+
 
 
 

@@ -24,17 +24,17 @@ class Insertion {
        currentNode.next = node;
        return this;
     }
-
+//create func
     insertBefore(value,newValue){
-        let currentNode =this.head;
+        let currentNode =this.head;//create new node
         let node = new Node(newValue);
 
-        if(currentNode.value === value){
+        if(currentNode.value === value){//check if it exists
             node.next= currentNode;
             this.head = node;
 
             return this;
-        }
+        }//if nt return the next one
 
         currentNode = currentNode.next;
     }

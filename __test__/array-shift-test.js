@@ -1,6 +1,6 @@
 'use strict';
 
-const arrayShift= require('../array-reverse/array-reverse');
+const arrayShift= require('../array-shift/array-shift');
 
 describe('to pass the solution and return the array reversed',()=>{
     it('the test passs will return reverse array',()=>{

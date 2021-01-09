@@ -14,6 +14,6 @@ https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/5)
 
 Linked-list kth     |[CC07](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/6)
 
-
+Linked-list ll-zip  |[CC08](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/7)
 
 

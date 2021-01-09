@@ -1,5 +1,5 @@
-const Node = require('../node');
-const LinkedList = require('../linked-list');
+const Node = require('../linked-list/node');
+const LinkedList = require('../linked-list/linked-list');
 
 
 class Insertion {

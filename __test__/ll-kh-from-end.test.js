@@ -1,6 +1,6 @@
 'use strict';
 
-const ll-kth-from-end = require('../Data Structuree/ll-kth-from-end/linkedlist');
+const LLFromEnd = require('../Data Structuree/ll-kth-from-end/linkedlist');
 
 describe('Where k is greater than the length of the linked list',()=>{
     it('kthFromEnd(k)',()=>{

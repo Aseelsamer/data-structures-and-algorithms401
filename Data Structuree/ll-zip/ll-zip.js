@@ -20,7 +20,7 @@ const zipLists = (list1, list2) => {
     return list2;
   }
 
-  while (cur1.next && cur2.next) {
+  while (cur1.next || cur2.next) {
     let input1 = cur1.next;
     cur1.next = cur2;
 

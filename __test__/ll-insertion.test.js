@@ -5,18 +5,18 @@ const linkedList = require ('../Data Structuree/ll-insertion/ll-insertion');
 describe('LinkedList Module',()=>{  
         it('Can successfully add a node to the end of the linked list',()=>{
             let LL = new linkedList();
-            LL.insert(value);
-            LL.insert(value1);
-            LL.insert(value2);
+            LL.insert(1);
+            LL.insert(2);
+            LL.insert(3);
             LL.insertAfter(1,5);
-            expect(LL.toString).toEqual('{3} -> {2} -> {5} -> {1} -> NULL');
+            expect(LL.toString).toEqual('{1} -> {5} -> {2} -> {3} -> NULL');
         })
     
         it('Can successfully insert a node after the last node of the linked list',()=>{
             let LL = new linkedList();
-            LL.insert(value);
-            LL.insert(value1);
-            LL.insert(value2);
+            LL.insert(3);
+            LL.insert(2);
+            LL.insert(1);
             LL.insertAfter(2,5);
             expect(LL.toString).toEqual('{3} -> {2} -> {5} -> {1} -> NULL');
         })
@@ -33,7 +33,7 @@ describe('LinkedList Module',()=>{
     })
 
     it('Can successfully insert a node before the first node of a linked list' , ()=>{
-        let ll = new LinkedList();
+        let LL = new linkedList();
        LL.insert(1);
        LL.insert(2)
        LL.insertBefore(1, 9);

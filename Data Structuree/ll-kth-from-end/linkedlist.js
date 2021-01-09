@@ -1,5 +1,5 @@
 'use strict';
-const Node = require('./node');
+const Node = require('../linked-list/node');
 
 class Linkedlist {
     constructor() {

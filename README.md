@@ -10,9 +10,7 @@ array-shift      | [CC02](https://github.com/Aseelsamer/data-structures-and-algo
 Binary-Search      | [CC03](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/array-binary-search)
 Linked-list      | [CC04](https://github.com/Aseelsamer/data-structures-and-algorithms401/tree/linked-list)
 Linked-list Insertion     | [CC05](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/5)
-
 Linked-list kth     |[CC07](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/6)
-
 Linked-list ll-zip  |[CC08](https://github.com/Aseelsamer/data-structures-and-algorithms401/pull/7)
 
 

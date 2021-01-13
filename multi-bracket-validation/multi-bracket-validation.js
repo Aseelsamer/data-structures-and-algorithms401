@@ -17,7 +17,7 @@ let isMatchingBrackets = function (str) {
             let last = stack.pop();
 
             //If the popped element from the stack, which is the last opening brace doesn’t match the corresponding closing brace in the map, then return false
-            if (str[i] !== map[last]) {return false};
+            if (str[i] ! map[last]) {return false};
         }
     }
     // By the completion of the for loop after checking all the brackets of the str, at the end, if the stack is not empty then fail
@@ -29,4 +29,4 @@ let isMatchingBrackets = function (str) {
 // console.log(isMatchingBrackets("(){}")); // returns true
 // console.log(isMatchingBrackets("({(()))}}"));  // returns false
 
-module.exports= isMatchingBrackets;
+module.exports= isMatchingBrackets; 

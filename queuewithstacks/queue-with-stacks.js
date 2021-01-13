@@ -10,17 +10,22 @@ class PseudoQueue {
 
     enqueue(value) {
         this.stack1.push(value);
-        this.stack2.push(value);
     }
 
     dequeue() {
         if (this.stack1 === 0) {
             return ' this is empty';
-        } else if (this.stack1 !== 0) {
-            let new = this.stack1.top();
-            this.stack1.pop();
-            return new;
+        } else {
+           this.stack2.push(this.stack1.pop())
         }
+
+        let returnValue = this.stack2.pop();
+        if(this.stack2 === 0){
+            return 'empty';
+        }else {
+            this.stack1.push(this.stack2.pop);
+        }
+        return returnValue;
     }
 
 }

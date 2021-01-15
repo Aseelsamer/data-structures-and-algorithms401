@@ -1,8 +1,7 @@
 'use strict';
 
 const test = require('./stacks');
-const Stack = test.stack;
-const Queue = test.queue;
+const Queue = require('./queue');
 
 
 describe('Stack and Queue',()=>{
@@ -53,13 +52,13 @@ describe('Stack and Queue',()=>{
     })
 
     it('Can successfully enqueue into a queue',()=>{
-        let queue= new test();
+        let queue= new Queue();
         queue.enqueue(3);
         expect(queue.peek()).toEqual(3);
     })
 
     it('Can successfully enqueue multiple values into a queue',()=>{
-        let queue= new test();
+        let queue= new Queue();
         queue.enqueue(3);
         queue.enqueue(4);
         queue.enqueue(5);
@@ -67,7 +66,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('Can successfully dequeue out of a queue the expected value',()=>{
-        let queue = new test();
+        let queue = new Queue();
         queue.enqueue(3);
         queue.enqueue(4);
         queue.enqueue(5);
@@ -78,7 +77,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('Can successfully peek into a queue, seeing the expected value',()=>{
-        let queue = new test();
+        let queue = new Queue();
         queue.enqueue(5);
         queue.enqueue(6);
         queue.enqueue(7);
@@ -86,7 +85,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('Can successfully empty a queue after multiple dequeues',()=>{
-        let queue = new test();
+        let queue = new Queue();
         queue.enqueue(3);
         queue.enqueue(4);
         queue.enqueue(5);
@@ -97,12 +96,12 @@ describe('Stack and Queue',()=>{
     })
 
     it('instantiate an empty queue',()=>{
-        let queue = new test();
+        let queue = new Queue();
         expect(queue.first).toBe(null);
     })
 
     it('empty queue raises expection',()=>{
-        let queue = new test();
+        let queue = new Queue();
         expect(queue.dequeue()).toEqual('empty queue');
     })
 })

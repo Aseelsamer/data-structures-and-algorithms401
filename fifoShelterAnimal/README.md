@@ -8,13 +8,11 @@ dequeue(pref)
 
 ## API
 enqueue(animal)
-adds animal to the shelter
-animal may be either a dog or a cat object
+adds cat or dog to the shelter
+
 dequeue(pref)
-takes in an animal type preference
-returns either a dog or a cat, depending on the value of pref
-if pref is neither dog nor cat, null is returned
+removes cat or dog else null 
 
 ## Solution
 
-![GitHub Logo](./assests/FIFO-Animal.PNG)
+![GitHub Logo](./assests/fifo.PNG)

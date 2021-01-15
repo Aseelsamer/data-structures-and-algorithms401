@@ -1,18 +1,20 @@
 'use strict';
 
-const test = require('./stacks');
+
+const Stack = require('./stacks');
+
 const Queue = require('./queue');
 
 
 describe('Stack and Queue',()=>{
     it('Can successfully push onto a stack',()=>{
-    let stack = new test();
+    let stack = new Stack();
     stack.push('test');
     expect(stack.peek()).toBeEqual('test');
     })
 
     it('Can successfully push multiple values onto a stack',()=>{
-        let stack = new test();
+        let stack = new Stack();
         stack.push(1);
         stack.push(2);
         stack.push(3);
@@ -20,7 +22,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('can successfully pop off the stack',()=>{
-        let stack = new test();
+        let stack = new Stack();
         stack.push(1);
         stack.push(2);
         stack.push(3);
@@ -28,7 +30,7 @@ describe('Stack and Queue',()=>{
     })
     
     it('Can successfully empty a stack after multiple pops',()=>{
-       const stack = new test();
+       const stack = new Stack();
        stack.push('abc');
        stack.push('cde');
        stack.push('fgh')
@@ -39,7 +41,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('Can successfully peek the next item on the stack',()=>{
-        let stack = new test();
+        let stack = new Stack();
         stack.push(5);
         stack.push(6);
         stack.push(7);
@@ -47,7 +49,7 @@ describe('Stack and Queue',()=>{
     })
 
     it('instantiate an empty stack',()=>{
-        let stack = new test();
+        let stack = new Stack();
         expect(stack).toBeEqual(null);
     })
 

@@ -16,3 +16,16 @@ postOrder --> O(n)
 ## whiteboard
 ![GitHub Logo](./assests/tree.PNG)
 
+------------------------------------------------------
+# find-maximum-binary-tree
+
+## Challenge
+-Node class
+-BinaryTree class(findMaxValue method)
+
+
+## Approach & Efficiency
+Used classes ,if statement.
+
+## whiteboard
+![GitHub Logo](./assests/maxVal.PNG)

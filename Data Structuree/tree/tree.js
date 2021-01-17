@@ -53,7 +53,39 @@ class BinaryTree {
 
         return results;
     }
+
+    findMaxValue(current){
+if (this.root === null){
+    return 0 ;
+} else {
+    let leftMax , rightMax ;
+
+    //store the data 
+    let max = current.data;
+
+    if(current.left != null){
+        leftMax=this.findMaxValue(current.left);
+        max= Math.max(max,leftMax);
+    }
+
+    if(current.right != null){
+        rightMax=this.findMaxValue(current.left);
+        max= Math.max(max,rightMax);
+    }
+    return max;
 }
+
+    }
+}
+
+// const b = new BinaryTree();
+
+// b.root=new Node(15);
+// console.log(b.root);
+// b.left=new Node(12);
+// console.log(b.left);
+// b.right=new Node(15);
+// console.log(b.right);
 
 class BinarySearchTree extends BinaryTree{
     add(value) {

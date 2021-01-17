@@ -82,9 +82,10 @@ if (this.root === null){
 
 // b.root=new Node(15);
 // console.log(b.root);
-// b.left=new Node(12);
+// b.left=new Node(17);
 // console.log(b.left);
 // b.right=new Node(15);
+// b.right.right=new Node(23);
 // console.log(b.right);
 
 class BinarySearchTree extends BinaryTree{

@@ -54,39 +54,32 @@ class BinaryTree {
         return results;
     }
 
-    findMaxValue(current){
-if (this.root === null){
-    return 0 ;
-} else {
-    let leftMax , rightMax ;
-
-    //store the data 
-    let max = current.data;
-
-    if(current.left != null){
-        leftMax=this.findMaxValue(current.left);
-        max= Math.max(max,leftMax);
-    }
-
-    if(current.right != null){
-        rightMax=this.findMaxValue(current.left);
-        max= Math.max(max,rightMax);
-    }
-    return max;
+    findMaximumValue() {
+        if (!this.root) {
+          throw new Error('Cannot find value in an empty tree');
+        }
+    
+        let maxValue = this.root.value;
+    
+        function _maxValue(root) {
+          if (!root) {
+            return;
+          }
+    
+          if (root.value > maxValue) {
+            maxValue = root.value;
+          }
+    
+          if (root.left) { _maxValue(root.left); }
+          if (root.right) { _maxValue(root.right); }
+        }
+    
+        _maxValue(this.root);
+        return maxValue;
+      }
 }
 
-    }
-}
 
-// const b = new BinaryTree();
-
-// b.root=new Node(15);
-// console.log(b.root);
-// b.left=new Node(17);
-// console.log(b.left);
-// b.right=new Node(15);
-// b.right.right=new Node(23);
-// console.log(b.right);
 
 class BinarySearchTree extends BinaryTree{
     add(value) {
@@ -142,6 +135,4 @@ class BinarySearchTree extends BinaryTree{
     }
 }
 
-module.exports = Node;
-module.exports = BinaryTree;
-module.exports = BinarySearchTree;
+module.exports = {Node,BinaryTree,BinarySearchTree}; 

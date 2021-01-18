@@ -1,8 +1,9 @@
 
 'use strict';
-const Node = require('../tree/tree').Node;
-const BinaryTree = require('../tree/tree').BinaryTree;
-const BinarySearchTree = require('../tree/tree').BinarySearchTree;
+let object =  require('../tree/tree');
+const Node = object.Node;
+const BinaryTree = object.BinaryTree;
+const BinarySearchTree = object.BinarySearchTree;
 
 describe('Binarytree ', () => {
     it('Can successfully instantiate a tree with a single root node', () => {

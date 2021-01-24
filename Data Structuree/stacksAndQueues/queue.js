@@ -1,4 +1,5 @@
-
+'use strict'l
+const Node = require('./stacks).Node;
 class Queue{
     constructor(){
         this.storage = new Array();
@@ -38,5 +39,6 @@ class Queue{
       }
 
 }
+
 
 module.exports= Queue;

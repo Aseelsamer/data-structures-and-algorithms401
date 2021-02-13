@@ -13,6 +13,10 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 
 -Size()
 
+## API 
+Big O 
+Time ->O(1)
+Space -> O(n)
 
 
 

@@ -31,6 +31,11 @@ class Graph {
     this.edges[vertexB.value].push(vertexA);
   }
 
+  GetNodes(){
+    let array=[];
+    return array.push[vertex,edge]
+  }
+
   GetNeighbors(vertex,weight) {
     if (this.edges[vertex.value]) {
       return this.edges[vertex.value,weight];

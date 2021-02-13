@@ -11,6 +11,8 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 
 -GetNeighbors()
 
+-GetNodes()
+
 -Size()
 
 ## API 

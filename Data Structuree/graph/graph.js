@@ -1,4 +1,5 @@
 'use strict';
+const Queue = require('../stacksAndQueues/queue');
 
 class Vertex {
   constructor(value) {
@@ -21,9 +22,6 @@ class Graph {
     this.edges = [];
   }
 
-  addNode(node){
-    return this.nodes.set(node,[])
-   }
 
   AddEdge(vertexA, vertexB,weight) {
     this.edges.push(weight);
@@ -45,6 +43,38 @@ class Graph {
 
   Size() {
     return this.vertices.length;
+  }
+
+  addVertex(value) {
+    const vertex = new Vertex(value);
+
+    this.vertices.push(vertex);
+
+    this.edges[value] = [];
+
+    return vertex;
+  }
+
+  breadthFirst(start) {
+    let array = [];
+    let queue = new Queue();
+    queue.enqueue(start);
+    array.push(start);
+
+    while (!queue.isEmpty()) {
+      let front = queue.dequeue();
+
+      this.edges[front.value].forEach(vertex => {
+        if (!array.includes(vertex)) {
+          array.push(vertex);
+          queue.enqueue(vertex);
+        }
+      });
+
+    }
+
+    return array;
+
   }
 
 }

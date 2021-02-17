@@ -77,6 +77,26 @@ class Graph {
 
   }
 
+  depthFirst(root) {
+    let visited = [];
+    let stack = new Stack();
+    stack.push(root);
+    visited.push(root);
+    while (!stack.isEmpty()) {
+      this.edges[stack.top.value].forEach(edge => {
+        if (!visited.includes(edge.destination)) {
+          visited.push(stack.pop());
+          stack.push(edge.destination);
+        } else {
+          visited.push(edge.destination);
+        }
+      });
+    }
+
+    
+    return visited;
+  }
+
 }
 
 module.exports = { Graph, Vertex,Edge };
